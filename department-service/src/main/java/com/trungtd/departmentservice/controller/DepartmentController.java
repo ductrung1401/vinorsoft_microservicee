@@ -44,7 +44,6 @@ public class DepartmentController {
 
     @PostMapping("/add-employee")
     public ResponseEntity<?> addEmployee(@RequestBody AddEmployeeDepartment req) {
-
         return ResponseEntity.ok(departmentService.addEmployeeToDepartment(req));
     }
 }

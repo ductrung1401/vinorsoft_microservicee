@@ -20,11 +20,11 @@ spring:
     gateway:
       mvc:
         routes:
-          - id: employee-service
-            uri: http://localhost:8082
-            predicates:
-              - Path=/api/v1/employee/**
           - id: department-service
             uri: http://localhost:8081
             predicates:
               - Path=/api/v1/department/**
+          - id: employee-service
+            uri: http://localhost:8082
+            predicates:
+              - Path=/api/v1/employee/**
